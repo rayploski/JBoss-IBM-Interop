@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application-client version="5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application-client_5.xsd">
+ <display-name>HelloWorld Client</display-name> 
+   <service-ref>
+    <service-ref-name>service/HelloWorldService</service-ref-name>
+    <service-interface>ejbs.HelloWorldService</service-interface>
+    <wsdl-file>META-INF/wsdl/HelloWorld.wsdl</wsdl-file>
+    <port-component-ref>
+      <service-endpoint-interface>ejbs.HelloWorld</service-endpoint-interface>
+    </port-component-ref>
+  </service-ref>
+  
+</application-client>
+
